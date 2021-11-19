@@ -34,7 +34,7 @@ export default function Home(){
         <section className={styles.highlights}>
             <div className="container mx-auto sm:px-6 lg:px-8">
               <div className={styles.pckg}>
-                <h3>Highlights!</h3>
+                <h3>Highlights</h3>
                 <p>While the rugged beauty of Acadia National Park naturally gets the headlines, there is so much more to cycling in Maine than just one of the nation’s most beloved parks. From the rugged coastal scenery to quintessential New England fishing villages and inspiring lighthouses to watching the sun rise above the Atlantic Ocean, Maine offers something for every level of cyclist. During this cycling tour powered by Intrepid Travel, spend your days riding quiet and beautiful tree-lined roads and your evenings enjoying some of America’s finest seafood cuisine—the perfect antidote to busy city life.</p>
               </div>
             </div>
