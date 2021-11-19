@@ -34,7 +34,7 @@ export default class TripCustomization extends Component {
     static async getInitialProps() {
         const tripDate = new Date();
         const eTripDate = tripDate.toString().replace(/ /g,"-").replace(/.{4}/, '').slice(0, -40);
-        const res = await fetch(`http://127.0.0.1:8000/api/getpackagedetailbyholidayid/96/${eTripDate}/${eTripDate}`)
+        const res = await fetch(`https://staging.bookingadmin.vacayou.com/api/getpackagedetailbyholidayid/96/${eTripDate}/${eTripDate}`)
         const offers = await res.json()
         console.log(offers);
         return { offers }
