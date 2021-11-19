@@ -1,0 +1,901 @@
+
+@font-face {
+  src: url('../public/fonts/goldplay-medium-webfont.woff');
+  font-family: "goldplaymedium";
+}
+@font-face {
+  src: url('../public/fonts/goldplay-semibold-webfont.woff');
+  font-family: "goldplaysemibold";
+}
+@font-face {
+  src: url('../public/fonts/goldplay-bold-webfont.woff');
+  font-family: "goldplaybold";
+}
+@font-face {
+  src: url('../public/fonts/goldplay-regular-webfont.woff');
+  font-family: "goldplayregular";
+}
+@font-face {
+  font-family: 'fontelloregular';
+  src: url('../public/fonts/fontello-webfont.woff2') format('woff2'),
+       url('../public/fonts/fontello-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "goldplayregular", Helvetica Neue, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "goldplaysemibold", Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 0 auto;
+}
+
+.rdrDefinedRangesWrapper{
+  display: none;
+}
+
+.rdrCalendarWrapper{
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.rdrCalendarWrapper {
+  color: #000000 !important;
+  font-size: 16px !important;
+}
+
+.rdrDayNumber{
+  font-weight: 500 !important;
+}
+
+.rdrDateDisplayWrapper{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.rdrDateDisplayItemActive {
+  border-color: #0E2A39 !important;
+}
+
+.rdrDateDisplayWrapper {
+  background-color: #0e2a3914;
+}
+
+.rdrMonthAndYearWrapper{
+  border-bottom: 1px solid #00000059;
+  padding-top: 0px;
+}
+
+.rdrMonths{
+  padding-top: 10px;
+}
+
+.rdrDateDisplay {
+  margin: 1em;
+} 
+
+.date{
+  width: 100%;
+}
+
+.dates h3{
+  font-size: 24px;
+  color: #10365C;
+  margin-bottom: 20px;
+}
+
+.rdrDay{
+  /* width: 37px !important; */
+  height: 63px !important;
+  color: #10365C !important;
+}
+
+.rdrDayNumber span{
+  font-size: 18px;
+}
+
+.rdrInRange{
+  color: #10365C !important;
+}
+
+.rdrDayToday .rdrDayNumber span:after{
+  content: unset !important;
+}
+
+.rdrEndEdge {
+  /* border-top-right-radius: unset !important;
+  border-bottom-right-radius: unset !important; */
+  color: #10365C !important;
+}
+
+.rdrStartEdge {
+  /* border-top-left-radius: unset !important;
+  border-bottom-left-radius: unset !important; */
+  color: #10365C !important;
+}
+
+.rdrStartEdge.rdrEndEdge{
+  border-radius: 50% !important;
+  color: #10365C !important;
+}
+
+.rdrWeekDay {
+  color: #10365C !important;
+  font-weight: 700 !important;
+}
+
+.dates p{
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  padding-left: 30px !important;
+  padding-top: 15px !important;
+}
+
+.bookbtn{
+  background-color: #858266;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 0px 14px;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #858266;
+  transition: all 0.3s ease-in-out;
+}
+
+.bookbtn:hover{
+  background-color: #fff;
+  color: #858266;
+}
+
+.card{
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 15px 1px #0000002e;
+  padding: 20px 20px 22px;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.offer-child .offer-name{
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #10365C;
+}
+
+.card:hover{
+  border: 2px solid #10365C;
+}
+
+.card-btn{
+  margin-top: 30px;
+}
+
+.card:first-child{
+  margin-top: 55px;
+}
+
+.card:nth-child(2){
+  margin-top: 30px;
+}
+
+.card p:nth-child(2){
+  padding: 20px 0 0 20px;
+}
+
+.card p span{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.rdrDayNumber{
+  font-size: 14px !important;
+}
+
+.date{
+  padding: 75px 100px 0;
+}
+
+.offers{
+  margin-left: -85px;
+}
+
+.date-container{
+  padding: 0 130px;
+}
+
+.dates h3{
+  padding-left: 76px;
+}
+
+.trip{
+  padding-top: 60px;
+}
+
+.trips h2{
+  font-size: 34px;
+  color: #10365C;
+  margin-bottom: 10px;
+}
+
+.trip-form h4,
+.payment-form h4{
+  color: #10365C;
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.need-assistance h4{
+  color: #10365C;
+  font-weight: 900;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.trips form input,
+.trips form select,
+.trip-info select,
+.trip-info input{
+  border-color: #00000047;
+  height: 35px;
+  margin-top: 7px;
+}
+
+.trip-info select,
+.trip-info input{
+  width: 100%;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.add-on{
+  display: block !important;
+}
+
+#services,
+.add-on select{
+  width: 100% !important;
+}
+
+.party-size label,
+.name label,
+.mail label,
+.country label,
+.address label,
+.city label,
+.card-details label,
+.exp-dates label{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#adults,
+#children,
+#infants,
+#rooms,
+#nights,
+#city,
+#state,
+#zipcode{
+  padding-left: 10px;
+  max-width: 182px;
+}
+
+#last_name,
+#first_name,
+#email,
+#mobile_number,
+#expdate,
+#cvv{
+  width: 277px;
+  padding-left: 10px;
+}
+
+#country,
+#address,
+#cno{
+  width: 570px;
+  padding-left: 10px;
+}
+
+#state{
+  width: 175px;
+}
+
+.party-size select{
+  padding-left: 10px;
+}
+
+.trip-form,
+.payment-form{
+  padding-top: 40px;
+}
+
+.trip{
+  width: 100%;
+}
+
+.party-size,
+.name,
+.mail,
+.country,
+.address,
+.city,
+.card-details,
+.exp-dates{
+  margin-bottom: 35px;
+}
+
+.info div{
+  width: 20px;
+  margin-right: 10px !important;
+}
+
+.info a{
+  text-decoration: underline;
+}
+
+.info{
+  margin-top: 25px;
+}
+
+.info:last-child{
+  margin-top: 15px;
+}
+
+.need-assistance{
+  border: 1px solid #0000004f;
+  padding: 30px 30px 40px;
+  border-bottom: 4px solid #10365c;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.trip-info p{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.trip-info{
+  width: 65%;
+  padding-right: 30px;
+}
+
+.trip-img{
+  width: 35%;
+  padding-left: 15px;
+}
+
+.trips{
+  margin-right: 25px;
+}
+
+.booking-details{
+  padding-top: 25px;
+}
+
+.selected-offer,
+.booking-summary{
+  border: 1px solid #10365c61;
+  border-radius: 5px;
+  padding: 25px;
+  margin-left: 35px;
+}
+
+.booking-summary{
+  margin-top: 30px;
+}
+
+.booking-summary p span{
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.booking-summary p:last-child span{
+  font-weight: 700;
+  color: #10365c;
+}
+
+.selected-offer h4{
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #10365c;
+}
+
+.party-size select,
+#services{
+  width: 383px;
+}
+
+.booking-summary h4{
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #10365c;
+}
+
+.trip-info .travel{
+  margin-top: 15px;
+}
+
+.pckg-info{
+  font-size: 16px;
+  font-weight: 700;
+  color: #10365c;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.booking-details ul li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.booking-details ul li div{
+  width: 20px;
+  margin-right: 10px !important;
+}
+
+.tnc p{
+  font-size: 14px;
+  line-height: 24px;
+  padding: 30px 0 0 35px;
+}
+
+#services{
+  padding-left: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  margin-right: 10px;
+  background: #fff !important;
+}
+
+.trip-img{
+  background-size: cover;
+  background-position: center center;
+  width: 35%;
+  height: 100%;
+  /* margin-left: 70px; */
+  padding: 80px;
+}
+
+
+@media (min-width: 1200px){
+  .container {
+    max-width: 1300px !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1366px){
+  /* .trip-container.grid-flow-col{
+    grid-auto-flow: row !important;
+  } */
+  .trip{
+    padding: 60px 5px 0 5px;
+  }
+  .trips{
+    margin-right: 10px;
+  }
+  .booking-details{
+    margin-left: 0;
+  }
+  .sel-offer{
+    flex-direction: column;
+  }
+  .trip-info,
+  .trip-img{
+    width: 100%;
+  }
+  .trip-info{
+    padding-right: 0;
+  }
+  .trip-info > div > p:first-child{
+    width: 29%;
+  }
+  .trip-info > div:nth-child(2) > p:first-child{
+    width: 23%;
+  }
+  .trip-img{
+    margin-top: 30px;
+  }
+  .selected-offer,
+  .booking-summary{
+    margin-left: 0;
+  }
+  #adults,
+  #children,
+  #infants{
+    width: 175px;
+    max-width: unset;
+  }
+  .party-size select, #services {
+    width: 555px;
+  }
+  .date {
+    padding: 75px 0px 0;
+  }
+  .date-container{
+    padding: 0;
+  }
+  #last_name, #first_name, #email, #mobile_number, #expdate, #cvv {
+    width: 400px;
+    padding-left: 10px;
+  }
+  #country, #address, #cno {
+    width: 840px;
+  }
+  #city, #state, #zipcode{
+    max-width: 400px;
+    width: 250px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .container {
+    max-width: 1000px !important;
+  }
+  .date {
+    padding: 65px 0px 0;
+  }
+  .date-container{
+    padding: 0;
+  }
+  .trip-container.grid-flow-col{
+    grid-auto-flow: row !important;
+  }
+  .trip{
+    padding: 50px 30px 0 30px;
+  }
+  .trips{
+    margin-right: 0;
+  }
+  .booking-details{
+    margin-left: 0;
+  }
+  .selected-offer,
+  .booking-summary{
+    margin-left: 0;
+  }
+  #adults,
+  #children,
+  #infants,
+  #rooms,
+  #nights{
+    width: 200px;
+    max-width: unset;
+  }
+  .party-size select, #services {
+    width: 430px;
+  }
+  footer .grid-cols-5{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  footer{
+    padding: 50px 20px !important;
+  }
+  .travel-info,
+  .social-info{
+    margin-top: 20px;
+  }
+  /* .social-list{
+    padding-top: 25px !important;
+
+  } */
+  .navmenu{
+    display: none;
+    width: 100%;
+  }
+  .open + .navmenu{
+    display: block;
+    background-color: #10365C;
+  }
+  .navmenu a{
+    text-align: center;
+  }
+  .navmenu a img{
+    margin: 0 auto;
+  }
+  .navmenu a.mr-6{
+    margin-right: 0 !important;
+  }
+  .rdrCalendarWrapper{
+    font-size: 18px !important;
+  }
+  .rdrDay{
+    height: 69px !important;
+  }
+  .dates h3 {
+    padding-left: 102px !important;
+  }
+  .bm-burger-bars:first-child{
+    top: 36% !important;
+  }
+  .bm-burger-bars:nth-child(2){
+    top: 51% !important;
+  }
+  .bm-burger-bars:last-child{
+    top: 67% !important;
+  }
+  .bm-menu-wrap{
+    top: 7.7% !important;
+  }
+  .booking-header__logo{
+    padding-left: 40px;
+  }
+  #last_name, #first_name, #email, #mobile_number, #expdate, #cvv {
+    width: 315px;
+  }
+  #country, #address, #cno {
+    width: 660px;
+  }
+  #state, #zipcode, #city{
+    max-width: 300px;
+    width: 200px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .container {
+    max-width: 960px !important;
+  }
+  .date {
+    padding: 65px 0px 0;
+  }
+  .date-container{
+    padding: 0;
+  }
+  .date-container.grid-flow-col {
+    grid-auto-flow: row;
+  }
+  .dates{
+    margin: 0 auto;
+  }
+  .offers{
+    margin-left: 0 !important;
+    padding: 0 50px;
+  }
+}
+@media (max-width: 767px){
+  .container {
+    max-width: 760px !important;
+  }
+  .header nav{
+    align-items: start !important;
+  }
+  .date {
+    padding: 45px 0px 0;
+  }
+  .date-container{
+    padding: 0;
+  }
+  .date-container.grid-flow-col {
+    grid-auto-flow: row;
+  }
+  .dates{
+    margin: 0 auto;
+  }
+  .rdrCalendarWrapper {
+    font-size: 13px !important;
+  }
+  .rdrDayNumber span {
+    font-size: 14px !important;
+  }
+  .rdrDay {
+    height: 50px !important;
+  }
+  .dates h3 {
+    padding-left: 0 !important;
+    text-align: center;
+  }
+  .offers{
+    margin-left: 0 !important;
+    padding: 0px;
+  }
+  .card:nth-child(2) {
+    margin-top: 20px;
+  }
+  .card{
+    padding: 20px 15px 22px;
+  }
+  .Home_main__1x8gC {
+    padding: 5rem 0 3rem !important;
+  }
+  .card:first-child {
+    margin-top: 35px;
+  }
+  .trip-container.grid-flow-col{
+    grid-auto-flow: row !important;
+  }
+  .trip{
+    padding: 40px 15px 0 15px;
+  }
+  .trips h2 {
+    font-size: 30px;
+  }
+  .trip .container{
+    padding: 0 !important;
+  }
+  .trips{
+    margin-right: 0;
+  }
+  .party-size{
+    flex-wrap: wrap;
+  }
+  .trip-form, .payment-form {
+    padding-top: 20px;
+  }
+  .booking-details{
+    margin-left: 0;
+  }
+  .selected-offer,
+  .booking-summary{
+    margin-left: 0;
+  }
+  #adults,
+  #children,
+  #infants,
+  #rooms,
+  #nights{
+    width: 175px;
+    max-width: unset;
+  }
+  .party-size select, #services {
+    width: 100%;
+  }
+  .party-size, .name, .mail, .country, .address, .city, .card-details, .exp-dates {
+    margin-bottom: 25px;
+  }
+  .party-size div:nth-child(3),
+  #__next > div > main > section.trip > div > div > div.trips.col-span-1 > div:nth-child(3) > form > div:nth-child(6) > div:nth-child(2){
+    margin-top: 15px;
+  }
+  .bookbtn {
+    font-size: 16px;
+    padding: 8px 0px 10px;
+  }
+  .sel-offer-info{
+    flex-direction: column-reverse;
+  }
+  .trip-img{
+    margin-left: 0 !important;
+    width: 100%;
+  }
+  .trip-info {
+    width: 100%;
+    padding-right: unset;
+    margin-top: 20px;
+  }
+  .tnc p{
+    padding: 15px 0 0 0px;
+  }
+  .navmenu{
+    display: none;
+  }
+  .open + .navmenu{
+    display: block;
+  }
+  .navmenu a{
+    text-align: center;
+  }
+  .navmenu a img{
+    margin: 0 auto;
+  }
+  .navmenu a.mr-6{
+    margin-right: 0 !important;
+  }
+  .booking-header__logo.h-100 {
+    max-width: 65% !important;
+  }
+  .booking-header__main{
+    height: 65px !important;
+    padding: 5px 0 0 !important;
+  }
+  .bm-burger-bars:last-child {
+    top: 64% !important;
+  }
+  .bm-burger-bars:nth-child(2) {
+    top: 47% !important;
+  }
+  .bm-burger-bars:first-child {
+    top: 32% !important;
+  }
+  .bm-burger-bars {
+    width: 7% !important;
+  }
+  .bm-menu-wrap {
+    top: 9% !important;
+  }
+  .offer-child .offer-name {
+    margin-top: 30px;
+  }
+  .grid-cols-5 {
+    grid-template-columns: 1fr !important;
+  }
+  footer{
+    padding: 40px 15px !important;
+  }
+  footer .grid div:first-child a img{
+    width: 30% !important;
+  }
+  footer .grid div:not(:first-child){
+    padding-top: 20px !important;
+  }
+  footer a{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .social-list{
+    padding-top: 0 !important;
+  }
+  .booking-header__logo{
+    padding-left: 25px;
+  }
+  .name, 
+  .mail,
+  .city,
+  .exp-dates{
+    flex-wrap: wrap;
+  }
+  #last_name, #first_name, #email, #mobile_number, #expdate, #cvv {
+    width: 180px;
+  }
+  #country, #address, #cno {
+    width: 384px;
+  }
+  #__next > div > main > section.trip > div > div > div.trips.col-span-1 > div:nth-child(3) > main > form > div.city.flex.items-center.justify-between > div:nth-child(3){
+    margin-top: 25px;
+  }
+  .sel-offer{
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 1023px){
+  .booking-menu__desktop-menu{
+    display: none !important;
+  }
+  .bm-burger-bars {
+    height: 4% !important;
+    left: unset !important;
+    width: 5%;
+    background-color: #fff;
+    right: 4% !important;
+  }
+  .bm-burger-bars.bm-burger-bars-hover{
+    opacity: 1 !important;
+  }
+  .bm-menu-wrap{
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%) !important;
+  }
+  .bm-item{
+    color: #12355D;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0 10px 20px;
+    border-bottom: 1px solid #c7c7c79c;
+  }
+}
