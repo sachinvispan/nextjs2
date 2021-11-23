@@ -79,7 +79,7 @@ export default class Payment extends Component {
           travel_from_date: this.state.pDateData.split('"')[3],
           basic_price: this.state.pDateData.split('"')[23],
           taxes_fees: this.state.pDateData.split('"')[27],
-          total: this.state.bData.split('"')[4],
+          total: this.state.bData.split('"')[11],
         };
         console.log(data1);
         //window.location.href = "/success"
