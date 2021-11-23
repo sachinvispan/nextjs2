@@ -106,7 +106,7 @@ export default class TripCustomization extends Component {
       }
       changeServices = (e) =>{
         this.setState({services: e.target.value});
-        this.setState({offer_id: this.state.dateData.split('"')[43]});
+        this.setState({offer_id: this.state.dateData.split('"')[19]});
         this.setState({package_id: this.state.offers.package_id});
       }
 
