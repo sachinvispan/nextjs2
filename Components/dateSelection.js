@@ -114,14 +114,14 @@ export default function DateSelection(props) {
                       <div>
                         { offers.status == 1 && offers.offer_detail ?
                           offerNames.map((od, i) =>
-                          <div className="offer-child" onClick={handleClick}>
+                          <div className="offer-child" onClick={handleClick} key={i}>
                             <p key={i} className="offer-name">{od.offer_name}</p>
                             {/* <span>{od.offer_id}</span> */}
                             {offerNames[i].offer_dates.map((ofd, i) =>
                             <div className="card" key={i}>
                               <p className="flex justify-between items-center" key={i}>
-                                <span>{ofd.start_date} - {ofd.end_date}</span>
-                                <span>${ofd.value} per night</span>
+                                <span key={i}>{ofd.start_date} - {ofd.end_date}</span>
+                                <span key={i}>${ofd.value} per night</span>
                               </p>
                               
                             </div>

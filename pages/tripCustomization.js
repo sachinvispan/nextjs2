@@ -67,7 +67,7 @@ export default class TripCustomization extends Component {
         // const axios = require('axios');
         axios
             .post(
-                `http://127.0.0.1:8000/api/addbooking`,
+                `https://staging.bookingadmin.vacayou.com/api/addbooking`,
                 data,
             )
             .then((response) => {
@@ -86,8 +86,8 @@ export default class TripCustomization extends Component {
                 const taxes = +this.state.dateData.split('"')[27];
                 const total_price = final_base_price + taxes;
                 const val = {
-                    bId,
-                    total_price,
+                    bId: String(this.state.booking_id),
+                    total_price: String(final_base_price + taxes),
                 }
                 localStorage.setItem('bId', JSON.stringify(val));
                 return response;

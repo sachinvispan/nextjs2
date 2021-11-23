@@ -71,7 +71,7 @@ export default class Payment extends Component {
           state: this.state.state,
           country: this.state.country,
           zipcode: this.state.zipcode,
-          booking_id: this.state.bData,
+          booking_id: this.state.bData.split('"')[3],
           card_number: this.state.card_number,
           card_expiration: this.state.card_expiration,
           card_cvv: this.state.card_cvv,
@@ -79,10 +79,10 @@ export default class Payment extends Component {
           travel_from_date: this.state.pDateData.split('"')[3],
           basic_price: this.state.pDateData.split('"')[23],
           taxes_fees: this.state.pDateData.split('"')[27],
-          
+          total: this.state.bData.split('"')[4],
         };
         console.log(data1);
-        // window.location.href = "/success"
+        window.location.href = "/success"
     
         try {
             axios
@@ -148,7 +148,9 @@ export default class Payment extends Component {
         // const max_infants = spDate[39];
         const bIData = this.state.bData.split('"');
         console.log(bIData);
-        const total_price = bIData[4];
+        const total_price = bIData[7];
+        console.log(total_price);
+        console.log(this.state.booking_id);
         // if (typeof window !== "undefined") {
         //     const windowUrl = window.location.search;
         //     const params = new URLSearchParams(windowUrl);
