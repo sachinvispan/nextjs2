@@ -148,8 +148,8 @@ export default class Payment extends Component {
         // const max_infants = spDate[39];
         const bIData = this.state.bData.split('"');
         console.log(bIData);
-        const total_price = bIData[7];
-        console.log(total_price);
+        const total_price = bIData[11];
+        const base_price = bIData[7];
         console.log(this.state.booking_id);
         // if (typeof window !== "undefined") {
         //     const windowUrl = window.location.search;
@@ -416,7 +416,7 @@ export default class Payment extends Component {
                                     </h4>
                                     <p className="flex items-center justify-between">
                                         <span>Base Price</span>
-                                        <span>${final_base_price}</span>
+                                        <span>${base_price}</span>
                                     </p>
                                     <p className="flex items-center justify-between">
                                         <span>Taxes & Fees*</span>

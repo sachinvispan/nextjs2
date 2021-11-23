@@ -50,7 +50,8 @@ export default class Success extends Component {
         // const max_infants = spDate[39];
         const bIData = this.state.bData.split('"');
         console.log(bIData);
-        const total_price = bIData[4];
+        const total_price = bIData[11];
+        const base_price = bIData[7];
 
         return (
             <div className={styles.container}>
@@ -118,7 +119,7 @@ export default class Success extends Component {
                                     </h4>
                                     <p className="flex items-center justify-between">
                                         <span>Base Price</span>
-                                        <span>${final_base_price}</span>
+                                        <span>${base_price}</span>
                                     </p>
                                     <p className="flex items-center justify-between">
                                         <span>Taxes & Fees*</span>

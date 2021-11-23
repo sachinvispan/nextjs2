@@ -87,6 +87,7 @@ export default class TripCustomization extends Component {
                 const total_price = final_base_price + taxes;
                 const val = {
                     bId: String(this.state.booking_id),
+                    base_price: String(final_base_price),
                     total_price: String(final_base_price + taxes),
                 }
                 localStorage.setItem('bId', JSON.stringify(val));
