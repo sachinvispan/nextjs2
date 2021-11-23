@@ -82,7 +82,7 @@ export default class Payment extends Component {
           total: this.state.bData.split('"')[4],
         };
         console.log(data1);
-        //window.location.href = "/success"
+        window.location.href = "/success"
     
         try {
             axios

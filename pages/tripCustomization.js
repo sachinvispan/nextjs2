@@ -92,7 +92,7 @@ export default class TripCustomization extends Component {
                 localStorage.setItem('bId', JSON.stringify(val));
                 return response;
             });
-        //window.location.href = "/payment"
+        window.location.href = "/payment"
       };
     
       changeAdults = (e) =>{
