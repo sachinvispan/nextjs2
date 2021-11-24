@@ -37,6 +37,7 @@ export default class Payment extends Component {
             basic_price: '',
             taxes_fees: '',
             total: '',
+            offer_id: '',
         };
     }
 
@@ -80,6 +81,7 @@ export default class Payment extends Component {
           basic_price: this.state.pDateData.split('"')[23],
           taxes_fees: this.state.pDateData.split('"')[27],
           total: this.state.bData.split('"')[11],
+          offer_id: this.state.pDateData.split('"')[19],
         };
         console.log(data1);
         //window.location.href = "/success"
