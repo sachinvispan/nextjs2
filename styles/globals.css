@@ -178,6 +178,10 @@ a {
   margin-bottom: 20px;
 }
 
+.card > * {
+  pointer-events: none;
+}
+
 .offer-child .offer-name{
   margin-top: 50px;
   font-size: 18px;
@@ -185,7 +189,7 @@ a {
   color: #10365C;
 }
 
-.card:hover{
+.card:hover, .bdr{
   border: 2px solid #10365C;
 }
 

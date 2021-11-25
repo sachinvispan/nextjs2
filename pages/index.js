@@ -63,6 +63,7 @@ import {useState,useEffect} from 'react'
 export default function Home() {
   
     const [offer, setOffer] = useState({});
+    const [clicked, setClicked] = useState('');
     const [offers, setOffers] = useState({});
     const [state, setState] = useState([
       {
@@ -124,6 +125,11 @@ export default function Home() {
     const handleClick = (event, props) => {
       setOffer({offerName: event.target.parentElement.childNodes[0].innerText, offerId: event.target.parentElement.childNodes[1].childNodes[1].childNodes[0].data, offerPrice: event.target.parentElement.childNodes[1].childNodes[0].childNodes[1].childNodes[1].data, taxes: event.target.parentElement.childNodes[1].childNodes[2].childNodes[1].data, max_adults: event.target.parentElement.childNodes[1].childNodes[3].childNodes[1].data, max_children: event.target.parentElement.childNodes[1].childNodes[3].childNodes[1].data, max_infants: event.target.parentElement.childNodes[1].childNodes[4].childNodes[1].data, adult_price: event.target.parentElement.childNodes[1].childNodes[6].childNodes[1].data, children_price: event.target.parentElement.childNodes[1].childNodes[7].childNodes[1].data, infant_price: event.target.parentElement.childNodes[1].childNodes[8].childNodes[1].data});
       // console.log(this.state.offer);
+    }
+
+    const handleSelectedCard = () => {
+      clicked ? setClicked('') : setClicked('card bdr');
+      //console.log('clicked');
     }
 
     let fullOfferName = offer.offerName;
@@ -190,7 +196,7 @@ export default function Home() {
                             <p key={i} className="offer-name">{od.offer_name}</p>
                             {/* <span>{od.offer_id}</span> */}
                             {offerNames[i].offer_dates.map((ofd, i) =>
-                            <div className="card" key={i}>
+                            <div className={clicked || 'card' } key={i} onClick={handleSelectedCard}>
                               <p className="flex justify-between items-center" key={i}>
                                 <span>{ofd.start_date} - {ofd.end_date}</span>
                                 <span>${ofd.value} per night</span>
