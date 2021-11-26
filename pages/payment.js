@@ -78,7 +78,7 @@ export default class Payment extends Component {
           card_cvv: this.state.card_cvv,
           travel_to_date: this.state.pDateData.split('"')[7],
           travel_from_date: this.state.pDateData.split('"')[3],
-          basic_price: this.state.pDateData.split('"')[23],
+          basic_price: this.state.bData.split('"')[7],
           taxes_fees: this.state.pDateData.split('"')[27],
           total: this.state.bData.split('"')[11],
           offer_id: this.state.pDateData.split('"')[19],
