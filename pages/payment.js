@@ -84,7 +84,7 @@ export default class Payment extends Component {
           offer_id: this.state.pDateData.split('"')[19],
         };
         console.log(data1);
-        //window.location.href = "/success"
+        window.location.href = "/success"
     
         try {
             axios
