@@ -10,7 +10,6 @@ import 'react-date-range/dist/theme/default.css';
 import { DateRange } from 'react-date-range';
 import {useState,useEffect} from 'react'
 
-
 export default function DateSelection() {
   
     const [offer, setOffer] = useState({});
