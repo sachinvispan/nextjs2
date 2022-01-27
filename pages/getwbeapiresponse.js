@@ -6,7 +6,8 @@ var config = {
   url: 'http://wbeproxytest.vacayou.com/Home/api/hotel/destinations?filter=Tampa',
   headers: { 
     'WBE-Api-Key': '613f426b-9713-4945-b951-be05eabb9ef2', 
-    'Authorization': 'Basic d2JlLXByb3h5dGVzdDoxZWM3YThhNThkNjMzZTA5MmM3NzExMGM3MDU5MzBjYw=='
+    'Authorization': 'Basic d2JlLXByb3h5dGVzdDoxZWM3YThhNThkNjMzZTA5MmM3NzExMGM3MDU5MzBjYw==',
+    'Content-Security-Policy': 'upgrade-insecure-requests'
   }
 };
 
